@@ -9,3 +9,6 @@ develop patterns java
 
 ![builder.png](builder.png)
 
+## Factory Method
+
+![factorymethod.png](factorymethod.png)
