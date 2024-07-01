@@ -15,3 +15,6 @@ develop patterns java
 
 ## Adapter
 ![adapter.png](adapter.png)
+
+## Decorator
+![decorator.png](decorator.png)
