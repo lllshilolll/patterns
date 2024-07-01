@@ -12,3 +12,6 @@ develop patterns java
 ## Factory Method
 
 ![factorymethod.png](factorymethod.png)
+
+## Adapter
+![adapter.png](adapter.png)
