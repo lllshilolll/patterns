@@ -1,26 +1,26 @@
 package org.example.patterns.decorator.service;
 
-import org.example.patterns.decorator.domain.Fruit;
-import org.example.patterns.decorator.service.old.FruitService;
+import org.example.patterns.decorator.domain.FruitD;
+import org.example.patterns.decorator.service.old.FruitServiceD;
 
-public interface FruitServiceDecorator extends FruitService {
+public interface FruitServiceDecorator extends FruitServiceD {
 
-    default void cutFruit(Fruit fruit) {
-        System.out.println("Cut " + fruit);
+    default void cutFruit(FruitD fruitD) {
+        System.out.println("Cut " + fruitD);
     }
 
     @Override
-    default Fruit add(Fruit fruit) {
+    default FruitD add(FruitD fruitD) {
         return null;
     }
 
     @Override
-    default Fruit remove(Fruit fruit) {
+    default FruitD remove(FruitD fruitD) {
         return null;
     }
 
     @Override
-    default Fruit update(Fruit fruit) {
+    default FruitD update(FruitD fruitD) {
         return null;
     }
 }

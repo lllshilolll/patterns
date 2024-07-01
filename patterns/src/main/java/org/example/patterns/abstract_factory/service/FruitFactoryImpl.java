@@ -1,8 +1,10 @@
 package org.example.patterns.abstract_factory.service;
 
 import lombok.AllArgsConstructor;
-import org.example.patterns.abstract_factory.domain.Apple;
-import org.example.patterns.abstract_factory.domain.Orange;
+import org.example.patterns.abstract_factory.domain.AppleAF;
+import org.example.patterns.abstract_factory.domain.OrangeAF;
+import org.example.patterns.abstract_factory.service.save.AppleFactory;
+import org.example.patterns.abstract_factory.service.save.OrangeFactory;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,12 +15,12 @@ public class FruitFactoryImpl implements FruitFactory {
     private final OrangeFactory orangeFactory;
 
     @Override
-    public Apple createApple() {
+    public AppleAF createApple() {
         return appleFactory.create();
     }
 
     @Override
-    public Orange createOrange() {
+    public OrangeAF createOrange() {
         return orangeFactory.create();
     }
 }

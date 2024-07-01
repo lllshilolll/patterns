@@ -2,7 +2,7 @@ package org.example.patterns.adapter.test;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.patterns.adapter.domain.Apple;
+import org.example.patterns.adapter.domain.AppleA;
 import org.example.patterns.adapter.domain.dto.AppleDto;
 import org.example.patterns.adapter.domain.enums.Color;
 import org.example.patterns.adapter.service.adapter.AppleAdapter;
@@ -22,7 +22,7 @@ public class Runner implements CommandLineRunner {
     public void run(String... args) {
         log.info("test adapter");
 
-        var apple = Apple.builder()
+        var apple = AppleA.builder()
                 .name("apple")
                 .color(Color.GREEN)
                 .weight(10)

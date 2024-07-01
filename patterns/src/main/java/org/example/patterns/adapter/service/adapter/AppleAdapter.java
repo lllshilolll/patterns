@@ -1,7 +1,7 @@
 package org.example.patterns.adapter.service.adapter;
 
 
-import org.example.patterns.adapter.domain.Apple;
+import org.example.patterns.adapter.domain.AppleA;
 import org.example.patterns.adapter.domain.dto.AppleDto;
 import org.example.patterns.adapter.domain.enums.Color;
 import org.springframework.stereotype.Service;
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
 @Service
-public class AppleAdapter implements BaseAdapter<Apple, AppleDto> {
+public class AppleAdapter implements BaseAdapter<AppleA, AppleDto> {
     @Override
-    public AppleDto mapToDto(Apple src) {
+    public AppleDto mapToDto(AppleA src) {
         return AppleDto.builder()
                 .color(src.getColor().name())
                 .fullName(src.getName())
@@ -20,8 +20,8 @@ public class AppleAdapter implements BaseAdapter<Apple, AppleDto> {
     }
 
     @Override
-    public Apple mapToEntity(AppleDto dto) {
-        return Apple.builder()
+    public AppleA mapToEntity(AppleDto dto) {
+        return AppleA.builder()
                 .color(Color.fromString(dto.getColor()))
                 .weight(dto.getWeight().intValue())
                 .name(dto.getFullName())

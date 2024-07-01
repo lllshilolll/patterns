@@ -1,9 +1,9 @@
 package org.example.patterns.factory_method.service;
 
-import org.example.patterns.factory_method.domain.Fruit;
-import org.example.patterns.factory_method.domain.FruitType;
+import org.example.patterns.factory_method.domain.FruitFM;
+import org.example.patterns.factory_method.domain.FruitTypeFM;
 
 public interface FruitFactory {
 
-    Fruit create(FruitType type);
+    FruitFM create(FruitTypeFM type);
 }

@@ -1,11 +1,11 @@
 package org.example.patterns.abstract_factory.service;
 
-import org.example.patterns.abstract_factory.domain.Apple;
-import org.example.patterns.abstract_factory.domain.Orange;
+import org.example.patterns.abstract_factory.domain.AppleAF;
+import org.example.patterns.abstract_factory.domain.OrangeAF;
 
 public interface FruitFactory {
 
-    Apple createApple();
+    AppleAF createApple();
 
-    Orange createOrange();
+    OrangeAF createOrange();
 }

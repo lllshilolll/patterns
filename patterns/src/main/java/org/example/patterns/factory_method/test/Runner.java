@@ -2,7 +2,7 @@ package org.example.patterns.factory_method.test;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.patterns.factory_method.domain.FruitType;
+import org.example.patterns.factory_method.domain.FruitTypeFM;
 import org.example.patterns.factory_method.service.FruitFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -16,7 +16,7 @@ public class Runner implements CommandLineRunner {
     @Override
     public void run(String... args) {
         log.info("test factory method");
-        var apple = fruitFactory.create(FruitType.APPLE);
+        var apple = fruitFactory.create(FruitTypeFM.APPLE);
         log.info("apple: {}", apple);
     }
 }

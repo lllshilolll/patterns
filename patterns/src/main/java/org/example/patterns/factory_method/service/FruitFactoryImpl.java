@@ -1,8 +1,10 @@
 package org.example.patterns.factory_method.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.patterns.factory_method.domain.Fruit;
-import org.example.patterns.factory_method.domain.FruitType;
+import org.example.patterns.factory_method.domain.FruitFM;
+import org.example.patterns.factory_method.domain.FruitTypeFM;
+import org.example.patterns.factory_method.service.save.AppleFactory;
+import org.example.patterns.factory_method.service.save.OrangeFactory;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,7 +14,7 @@ public class FruitFactoryImpl implements FruitFactory {
     private final OrangeFactory orangeFactory;
 
     @Override
-    public Fruit create(FruitType type) {
+    public FruitFM create(FruitTypeFM type) {
         return switch (type) {
             case APPLE -> appleFactory.create();
             case ORANGE -> orangeFactory.create();
