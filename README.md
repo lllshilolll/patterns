@@ -18,3 +18,6 @@ develop patterns java
 
 ## Decorator
 ![decorator.png](decorator.png)
+
+## Flyweight
+![flyweight.png](flyweight.png)
