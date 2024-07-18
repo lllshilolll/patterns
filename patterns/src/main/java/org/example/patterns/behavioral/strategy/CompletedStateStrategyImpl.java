@@ -1,4 +1,4 @@
-package org.example.patterns.behavioral.state.strategy;
+package org.example.patterns.behavioral.strategy;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.patterns.behavioral.state.domain.Document;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class NewStateStrategyImpl implements StateStrategy {
+public class CompletedStateStrategyImpl implements StateStrategy {
 
     @Override
     public State getState() {
-        return State.NEW;
+        return State.COMPLETED;
     }
 
     @Override

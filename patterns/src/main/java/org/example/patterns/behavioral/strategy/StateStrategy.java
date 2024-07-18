@@ -1,4 +1,4 @@
-package org.example.patterns.behavioral.state.strategy;
+package org.example.patterns.behavioral.strategy;
 
 import org.example.patterns.behavioral.state.domain.Document;
 import org.example.patterns.behavioral.state.domain.State;

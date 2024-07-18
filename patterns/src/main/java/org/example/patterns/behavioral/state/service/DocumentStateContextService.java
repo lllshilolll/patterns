@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.patterns.behavioral.state.domain.Document;
 import org.example.patterns.behavioral.state.domain.State;
-import org.example.patterns.behavioral.state.strategy.StateStrategy;
+import org.example.patterns.behavioral.strategy.StateStrategy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
